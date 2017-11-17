@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="anulom.executioner5.com3.anulom">
+    <!--<permission-->
+        <!--android:name="com.javapapers.currentlocationinmap.permission.MAPS_RECEIVE"-->
+        <!--android:protectionLevel="signature" />-->
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="com.javapapers.currentlocationinmap.permission.MAPS_RECEIVE" />
+    ...
+    <receiver
+        android:name=".Alarm"
+        android:process=":remote"></receiver>
+    ...
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/execu"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="anulom.executioner5.com3.anulom.SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name="anulom.executioner5.com3.anulom.Login"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden">
+
+        </activity>
+
+        <activity
+            android:name="anulom.executioner5.com3.anulom.NextActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden">
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+
+
+        </activity>
+        <activity
+            android:name="anulom.executioner5.com3.anulom.SearchActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden">
+
+        </activity>
+
+        <activity
+            android:name="anulom.executioner5.com3.anulom.Appointmentbooking"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden">
+
+        </activity>
+
+
+        <activity
+            android:name="anulom.executioner5.com3.anulom.about"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden">
+
+        </activity>
+
+        <activity
+            android:name="anulom.executioner5.com3.anulom.weekendoff"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden">
+
+        </activity>
+        <activity
+
+            android:name="anulom.executioner5.com3.anulom.reschedule"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+
+        </activity>
+
+        <activity
+
+            android:name="anulom.executioner5.com3.anulom.Nextactivity1"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+
+        </activity>
+
+        <activity
+
+            android:name="anulom.executioner5.com3.anulom.NextActivity2"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+
+        </activity>
+
+        <activity
+
+            android:name="anulom.executioner5.com3.anulom.NextActivity3"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+
+        </activity>
+
+        <activity
+            android:name="anulom.executioner5.com3.anulom.taskcomment"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden">
+
+        </activity>
+
+        <activity
+            android:name="anulom.executioner5.com3.anulom.StatusInfo"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"></activity>
+
+        <activity
+            android:name="anulom.executioner5.com3.anulom.Pay"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="anulom.executioner5.com3.anulom.newstatusinfo"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name="anulom.executioner5.com3.anulom.Details"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name="anulom.executioner5.com3.anulom.CommentInfo"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name="anulom.executioner5.com3.anulom.nodetails"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"></activity>
+
+        <activity
+            android:name="anulom.executioner5.com3.anulom.appointmentoption"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"></activity>
+
+        <activity
+            android:name="anulom.executioner5.com3.anulom.adhocremainder"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"></activity>
+
+        <activity
+            android:name="anulom.executioner5.com3.anulom.MyComment"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden"></activity>
+
+        <activity
+            android:name="anulom.executioner5.com3.anulom.ACVReport"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden"></activity>
+
+        <service
+            android:name="anulom.executioner5.com3.anulom.services.GetAllDataList"
+            android:enabled="true"></service>
+        <service
+            android:name="anulom.executioner5.com3.anulom.services.Posttask"
+            android:enabled="true"></service>
+        <service
+            android:name="anulom.executioner5.com3.anulom.services.getappointmentslot"
+            android:enabled="true"></service>
+        <service
+            android:name="anulom.executioner5.com3.anulom.services.reassignpost"
+            android:enabled="true"></service>
+        <service
+            android:name="anulom.executioner5.com3.anulom.services.not_applicablepost"
+            android:enabled="true"></service>
+        <!--<service-->
+        <!--android:name="anulom.executioner5.com3.anulom.services.Sendtaskreportdetails"-->
+        <!--android:enabled="true"></service>-->
+        <service
+            android:name="anulom.executioner5.com3.anulom.GPSTracker"
+            android:enabled="true"></service>
+        <service
+            android:name="anulom.executioner5.com3.anulom.services.call"
+            android:enabled="true"></service>
+        <service
+            android:name="anulom.executioner5.com3.anulom.services.fetchactualtime"
+            android:enabled="true"></service>
+
+
+        <service
+            android:name="anulom.executioner5.com3.anulom.services.LocationTrackingService"
+            android:enabled="true"></service>
+
+        <service
+            android:name="anulom.executioner5.com3.anulom.services.postappointmentbooking"
+            android:enabled="true"></service>
+        <service
+            android:name="anulom.executioner5.com3.anulom.services.weekendoffdetails"
+            android:enabled="true"></service>
+        <service
+            android:name="anulom.executioner5.com3.anulom.services.AppointmentstatusPost"
+            android:enabled="true"></service>
+
+        <service
+            android:name="anulom.executioner5.com3.anulom.services.rescheduledetails"
+            android:enabled="true"></service>
+        <service
+            android:name="anulom.executioner5.com3.anulom.services.SendReportService"
+            android:enabled="true"></service>
+
+        <service
+            android:name="anulom.executioner5.com3.anulom.services.SendLocationService"
+            android:enabled="true"></service>
+
+        <service
+            android:name="anulom.executioner5.com3.anulom.services.GetCommentService"
+            android:enabled="true"></service>
+
+        <service
+            android:name="anulom.executioner5.com3.anulom.services.StatusReportService"
+            android:enabled="true"></service>
+        <service
+            android:name="anulom.executioner5.com3.anulom.services.SendCommentService"
+            android:enabled="true"></service>
+        <service
+            android:name="anulom.executioner5.com3.anulom.services.SendPaymentService"
+            android:enabled="true"></service>
+        <service
+            android:name="anulom.executioner5.com3.anulom.services.SendmultiPartyReport"
+            android:enabled="true">
+
+        </service>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDpC6ASRoBGKb3h1mlbwVDmHPAX3bTlvRM" />
+
+        <activity
+            android:name="anulom.executioner5.com3.anulom.MapsActivity"
+            android:label="@string/title_activity_maps"></activity>
+
+
+        <receiver
+            android:name="anulom.executioner5.com3.anulom.Receiver.NetworkChangeReceiver"
+            android:label="NetworkChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="android.location.PROVIDERS_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="anulom.executioner5.com3.anulom.MyReceiver">
+            <intent-filter>
+                <action android:name="android.media.action.DISPLAY_NOTIFICATION" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+
+    </application>
+
+</manifest>

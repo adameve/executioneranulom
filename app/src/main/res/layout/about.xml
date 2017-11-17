@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#ffa500"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextColor="@color/cardview_light_background" />
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/version"
+        android:layout_alignRight="@+id/version"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/logo_black" />
+
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:clickable="true"
+        android:text="Current version : V - 16.4.4"
+        android:textSize="18dp" />
+
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/version"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Release Notes"
+        android:textAppearance="@style/Base.ThemeOverlay.AppCompat.Light"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Appointment Booking"
+        android:textAppearance="@style/Base.ThemeOverlay.AppCompat.Light"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Reschedule"
+        android:textAppearance="@style/Base.ThemeOverlay.AppCompat.Light"
+        android:textSize="15dp" />
+
+
+    <TextView
+        android:id="@+id/txt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="API version-v2"
+        android:textAppearance="@style/Base.ThemeOverlay.AppCompat.Light"
+        android:textSize="15dp" />
+
+
+    <TextView
+        android:id="@+id/txt5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Task"
+        android:textAppearance="@style/Base.ThemeOverlay.AppCompat.Light"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/txt6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Fetch Actual Time"
+        android:textAppearance="@style/Base.ThemeOverlay.AppCompat.Light"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/txt7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Appointment Status"
+        android:textAppearance="@style/Base.ThemeOverlay.AppCompat.Light"
+        android:textSize="15dp" />
+
+</RelativeLayout>
