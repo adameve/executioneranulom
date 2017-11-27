@@ -68,5 +68,8 @@ dependencies {
     compile 'com.squareup.okhttp:okhttp:2.5.0'
     compile 'com.android.support:multidex:1.0.0'
     compile 'com.android.support:design:23.2.0'
-}
+//    compile 'com.google.android.gms:play-services-location:11.6.0'
+//    compile 'com.google.android.gms:play-services-maps:11.6.0'
+    //compile 'com.google.android.gms:play-services-location:10.+'
 
+}
