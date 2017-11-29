@@ -14,7 +14,6 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="#ffa500"
-
             android:weightSum="1"
             app:layout_scrollFlags="scroll|enterAlways"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
@@ -48,7 +47,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#ffa500"
-
             app:tabGravity="fill"
             app:tabIndicatorColor="@android:color/holo_red_light"
             app:tabIndicatorHeight="5sp"
