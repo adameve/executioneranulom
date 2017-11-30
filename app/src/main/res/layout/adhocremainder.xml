@@ -25,6 +25,7 @@
         android:layout_marginRight="17dp"
         android:layout_marginTop="161dp"
         android:text="NO TASK DETAILS!!!"
-        android:textColor="#000000"
-        android:textSize="18dp" />
+        android:textColor="#006B3C"
+        android:textStyle="bold"
+        android:textSize="18sp" />
 </RelativeLayout>
