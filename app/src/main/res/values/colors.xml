@@ -5,5 +5,13 @@
     <color name="colorAccent">#ffa500</color>
     <color name="backgroundcolor">#cfd7df</color>
     <color name="blue">#5ac8fa</color>
+    <color name="primary">#00BCD4</color>
+        <color name="primary_dark">#FF4500</color>
+        <color name="primary_light">#ffff00</color>
+        <color name="accent">#006B3C</color>
+        <color name="primary_text">#212121</color>
+        <color name="secondary_text">#727272</color>
+        <color name="icons">#FFFFFF</color>
+        <color name="divider">#B6B6B6</color>
 
 </resources>

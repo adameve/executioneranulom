@@ -5,16 +5,18 @@
         <!--android:name="com.javapapers.currentlocationinmap.permission.MAPS_RECEIVE"-->
         <!--android:protectionLevel="signature" />-->
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
-    <uses-permission android:name="android.permission.CALL_PHONE" />
-    <uses-permission android:name="com.javapapers.currentlocationinmap.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!-- External storage for caching. -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     ...
-    <receiver
-        android:name=".Alarm"
-        android:process=":remote"></receiver>
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
     ...
 
     <application
@@ -287,7 +289,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyDpC6ASRoBGKb3h1mlbwVDmHPAX3bTlvRM" />
+            android:value="AIzaSyBObqvJYWJqy2JdHIfaXQ7pEgalkj1iDS8"/>
 
         <activity
             android:name="anulom.executioner5.com3.anulom.MapsActivity"
