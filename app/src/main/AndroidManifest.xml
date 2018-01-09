@@ -247,7 +247,6 @@
             android:name="anulom.executioner5.com3.anulom.services.fetchactualtime"
             android:enabled="true"></service>
 
-
         <service
             android:name="anulom.executioner5.com3.anulom.services.LocationTrackingService"
             android:enabled="true"></service>
